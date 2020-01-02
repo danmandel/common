@@ -1,2 +1,2 @@
-# common
-A package that contains commonly used algorithms and datastructures.
+# Description
+A package template.

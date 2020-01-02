@@ -1,0 +1,67 @@
+{
+	"name": "common-package",
+	"version": "1.0.7",
+	"description": "A package that contains commonly used algorithms and datastructures.",
+	"main": "build/index.js",
+	"types": "build/index.d.ts",
+	"author": "<danmandel09@gmail.com>",
+	"license": "MIT",
+	"keywords": [
+		"Package",
+		"Common"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/danmandel/common.git"
+	},
+	"scripts": {
+		"prepare": "npm run build",
+		"prepublishOnly": "npm test && npm run lint",
+		"preversion": "npm run lint",
+		"clean": "rm -rf ./build",
+		"build": "npm run clean && tsc",
+		"format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+		"lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+		"test": "jest",
+		"test:watch": "jest --watch",
+		"release": "npm publish"
+	},
+	"devDependencies": {
+		"@types/jest": "^24.0.25",
+		"@types/node": "^13.1.2",
+		"eslint": "^6.8.0",
+		"eslint-config-prettier": "^6.9.0",
+		"jest": "^24.9.0",
+		"prettier": "^1.19.1",
+		"ts-jest": "^24.2.0",
+		"typescript": "^3.7.4"
+	},
+	"jest": {
+		"transform": {
+			"^.+\\.(t|j)sx?$": "ts-jest"
+		},
+		"testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+		"moduleFileExtensions": [
+			"ts",
+			"tsx",
+			"js",
+			"jsx",
+			"json",
+			"node"
+		]
+	},
+	"prettier": {
+		"arrowParens": "avoid",
+		"htmlWhitespaceSensitivity": "css",
+		"printWidth": 120,
+		"bracketSpacing": false,
+		"jsxBracketSameLine": false,
+		"jsxSingleQuote": true,
+		"proseWrap": "always",
+		"semi": true,
+		"singleQuote": true,
+		"tabWidth": 4,
+		"trailingComma": "none",
+		"useTabs": true
+	}
+}
