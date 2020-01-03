@@ -1,15 +1,15 @@
 import {partition} from '../partition';
 /**
- * Quicksort is a comparison sort. Efficient implementations are not stable.
+ * Quicksort is:
+ *  - comparison based
+ *  - not stable (in efficient implementations)
+ *  - best case time complexity of O(n log(n))
+ *  - average case time complexity of O(n log(n))
+ *  - worst case time complexity of O(n^2)
+ *  - worst case space complexity of O(log(n))
  *
- *  - Time Complexity -
- * Best case:  n*log(n)
- * Worst case: n^2
  *
- *  - Space Complexity -
- * In place: log(n)
- *
- * @param {Array[number]} array
+ * @param {Array[number]} arr
  * @param {number} [left=0]
  * @param {number} [right=array.length - 1]
  * @returns {Array<number>}

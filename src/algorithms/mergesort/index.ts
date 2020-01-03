@@ -8,12 +8,9 @@ import {merge} from '../merge';
  *  - best case time complexity of O(n log(n))
  *  - average case time complexity of O(n log(n))
  *  - worst case time complexity of O(n log(n))
- *
  *  - worst case space complexity of O(n)
  *
  * @param {Array[number]} arr
- * @param {number} [left=0]
- * @param {number} [right=array.length - 1]
  * @returns {Array<number>}
  */
 
