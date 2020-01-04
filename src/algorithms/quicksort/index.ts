@@ -9,10 +9,10 @@ import { partition } from '../partition';
  *  - worst case space complexity of O(log(n))
  *
  *
- * @param {Array[number]} arr
+ * @param {Array[number]} arr The array to be sorted.
  * @param {number} [left=0]
  * @param {number} [right=array.length - 1]
- * @returns {Array<number>}
+ * @returns {any}
  */
 
 export const quicksort: Function = (arr: number[], left: number = 0, right: number = arr.length - 1): any => {

@@ -10,8 +10,8 @@ import { merge } from '../merge';
  *  - worst case time complexity of O(n log(n))
  *  - worst case space complexity of O(n)
  *
- * @param {Array[number]} arr
- * @returns {Array<number>}
+ * @param {number[]} arr The array to sort.
+ * @returns {number[]} The sorted array.
  */
 
 export const mergesort = (arr: number[]): number[] => {
