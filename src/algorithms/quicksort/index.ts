@@ -1,4 +1,4 @@
-import {partition} from '../partition';
+import { partition } from '../partition';
 /**
  * Quicksort is:
  *  - comparison based
@@ -15,9 +15,9 @@ import {partition} from '../partition';
  * @returns {Array<number>}
  */
 
-export const quicksort:Function = (arr:number[], left:number = 0, right:number = arr.length - 1):any => {
-  if (arr.length <= 2) return arr;
-  const index:number = partition(arr, left, right);
-  if (left < index - 1) quicksort(arr, left, index - 1);
-  if (index < right) quicksort(arr, index, right);
+export const quicksort: Function = (arr: number[], left: number = 0, right: number = arr.length - 1): any => {
+	if (arr.length <= 2) return arr;
+	const index: number = partition(arr, left, right);
+	if (left < index - 1) quicksort(arr, left, index - 1);
+	if (index < right) quicksort(arr, index, right);
 };

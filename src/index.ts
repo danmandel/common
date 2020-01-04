@@ -1,2 +1,2 @@
-export {quicksort} from './algorithms/quicksort';
-export {mergesort} from './algorithms/mergesort';
+export { quicksort } from './algorithms/quicksort';
+export { mergesort } from './algorithms/mergesort';

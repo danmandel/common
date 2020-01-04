@@ -1,4 +1,4 @@
-import {merge} from '../merge';
+import { merge } from '../merge';
 
 /**
  * Mergesort is:
@@ -14,10 +14,10 @@ import {merge} from '../merge';
  * @returns {Array<number>}
  */
 
-export const mergesort = (arr: number[]):number[] => {
-  if (arr.length < 2) return arr; // @todo is this faster than arr.length <= 1?
-  const mid = Math.floor(arr.length / 2);
-  const left = arr.slice(0, mid);
-  const right = arr.slice(mid);
-  return merge(mergesort(left), mergesort(right));
-}
+export const mergesort = (arr: number[]): number[] => {
+	if (arr.length < 2) return arr; // @todo is this faster than arr.length <= 1?
+	const mid = Math.floor(arr.length / 2);
+	const left = arr.slice(0, mid);
+	const right = arr.slice(mid);
+	return merge(mergesort(left), mergesort(right));
+};
