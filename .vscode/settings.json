@@ -1,39 +1,106 @@
 {
-	"workbench.colorTheme": "One Dark+ (Sublime)",
-	"window.zoomLevel": 0,
-	"editor.renderWhitespace": "boundary",
-	"editor.formatOnSave": false,
+	"breadcrumbs.enabled": true,
+	"breadcrumbs.filePath": "on",
+	"diffEditor.ignoreTrimWhitespace": false,
+	"editor.defaultFormatter": "dbaeumer.vscode-eslint",
+	"editor.detectIndentation": false,
+	"editor.formatOnSave": true,
+	"editor.insertSpaces": false,
+	"editor.parameterHints.enabled": true,
+	"editor.quickSuggestions": {
+		"comments": true,
+		"other": true,
+		"strings": true
+	},
+	"editor.renderWhitespace": "all",
+	"editor.rulers": [
+		120
+	],
+	"editor.tabSize": 2,
+	"eslint.alwaysShowStatus": true,
+	"eslint.autoFixOnSave": true,
+	"eslint.enable": true,
+	"eslint.lintTask.enable": true,
+	"eslint.validate": [
+		{
+			"autoFix": true,
+			"language": "javascript"
+		},
+		{
+			"autoFix": true,
+			"language": "vue"
+		},
+		{
+			"autoFix": true,
+			"language": "html"
+		},
+		{
+			"autoFix": true,
+			"language": "typescript"
+		},
+		{
+			"autoFix": true,
+			"language": "typescriptreact"
+		},
+		{
+			"autoFix": true,
+			"language": "json"
+		},
+	],
 	"files.autoSave": "afterDelay",
 	"files.exclude": {
-		// 	"**/.git": true,
-		// 	"**/.svn": true,
-		// 	"**/.hg": true,
-		// 	"**/CVS": true,
-		// 	"**/.DS_Store": true,
-		"node_modules": true
-		// 	".npm-offline-cache": true,
-		// 	"lib": true,
-		// 	"dist": true,
-		// 	"build":true,
-		// 	"coverage": true,
-		// 	"npm": true
+		"**/.DS_Store": true,
+		"**/.git": true,
+		"**/.hg": true,
+		"**/.svn": true,
+		"**/CVS": true,
+		".npm-offline-cache": true,
+		"build": true,
+		"coverage": true,
+		"dist": true,
+		"lib": true,
+		"node_modules": false,
+		"npm": true
 	},
-	"files.trimTrailingWhitespace": true,
 	"files.insertFinalNewline": true,
-	"eslint.enable": true,
-	"editor.rulers": [120],
-  "typescript.tsdk": "node_modules/typescript/lib",
-	"tslint.enable": true, // Control whether tslint is enabled for TypeScript files or not.
-	"tslint.jsEnable": true, //	Control whether tslint is enabled for JavaScript files or not.
-	// tslint.validateWithDefaultConfig	Validate a file when there is only a default tslint configuration is found
-	"tslint.configFile": "tslint.json", // The path to the rules configuration file
-	// tslint.ignoreDefinitionFiles	Control if TypeScript definition files should be ignored	true
-	// tslint.exclude	Configure glob patterns of file paths to exclude from linting
-	"tslint.run": "onType", // Run the linter on save (onSave) or on type (onType)	onType
-	// tslint.nodePath	A path added to NODE_PATH when resolving the tslint module.
-	"tslint.autoFixOnSave": true, // Turns auto fix on save on or off, or defines which rules (e.g. `no-var-keyword`) to auto fix on save.
-	"tslint.alwaysShowRuleFailuresAsWarnings": true, // Always show rule failures as warnings, independent of the tslint configuration.
-	"tslint.alwaysShowStatus": true, // Always show the TSlint status bar item, not only when there are errors or warnings.
-	"tslint.trace.server": "messages" // Traces the communication between VSCode and the tslint linter service.	off
-	// tslint.packageManager	The package manager to use to locate the tslint module.	npm
+	"files.trimTrailingWhitespace": true,
+	"files.watcherExclude": {
+		"**/.git/objects/**": true,
+		"**/node_modules/**": true,
+		"**/tmp/**": true
+	},
+	"html.suggest.html5": true,
+	"[javascript]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"javascript.preferences.importModuleSpecifier": "auto",
+	"javascript.preferences.quoteStyle": "single",
+	"javascript.suggest.completeFunctionCalls": true,
+	"javascript.validate.enable": true,
+	  "[json]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	  },
+	"outline.icons": true,
+	"outline.problems.badges": true,
+	"outline.problems.enabled": true,
+	"[typescript]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"typescript.preferences.importModuleSpecifier": "auto",
+	"typescript.preferences.quoteStyle": "single",
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"typescript.validate.enable": true,
+	"vetur.validation.template": false,
+	"window.zoomLevel": 0,
+	"workbench.activityBar.visible": true,
+	"workbench.colorTheme": "One Dark+ (Sublime)",
+	"workbench.editor.labelFormat": "short"
 }
+

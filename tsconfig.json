@@ -72,10 +72,9 @@
 		"suppressImplicitAnyIndexErrors": false,
 		"target": "es5",
 		"traceResolution": false,
-		"typeRoots": [],
-		"types": [],
+		"types": ["jest"],
 		"watch": false
 	},
 	"include": ["src"],
-	"exclude": ["node_modules", "**/__tests__/*"]
+	"exclude": ["node_modules","!node_modules/@types"]
 }
