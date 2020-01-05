@@ -85,7 +85,6 @@ module.exports = {
 		'@typescript-eslint/no-unnecessary-type-assertion': 'warn',
 		//'@typescript-eslint/no-use-before-declare': 'warn',
 		'@typescript-eslint/no-var-requires': 'warn',
-		'@typescript-eslint/prefer-for-of': 'warn',
 		'@typescript-eslint/prefer-function-type': 'warn',
 		// '@typescript-eslint/prefer-interface': 'warn',
 		'@typescript-eslint/prefer-namespace-keyword': 'warn',
