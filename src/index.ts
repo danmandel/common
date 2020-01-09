@@ -1,2 +1,4 @@
-export { quicksort } from './algorithms/quicksort';
-export { mergesort } from './algorithms/mergesort';
+import * as algorithms from './algorithms';
+import * as datastructures from './datastructures';
+
+export { algorithms, datastructures };
