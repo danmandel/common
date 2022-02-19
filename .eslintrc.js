@@ -36,7 +36,7 @@ module.exports = {
 		'@typescript-eslint/array-type': 'warn',
 		'@typescript-eslint/await-thenable': 'warn',
 		'@typescript-eslint/ban-types': 'off',
-		'@typescript-eslint/class-name-casing': 'warn',
+		// '@typescript-eslint/class-name-casing': 'warn',
 		'@typescript-eslint/no-unused-vars': 'off',
 		'@typescript-eslint/explicit-member-accessibility': [
 			'warn',

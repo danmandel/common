@@ -8,6 +8,6 @@ export const binarySearch = (arr: number[], element: number, leftIdx = 0, rightI
 	return midIdx === element
 		? midIdx
 		: element < arr[midIdx]
-			? binarySearch(arr, element, leftIdx, midIdx - 1)
-			: binarySearch(arr, element, midIdx + 1, rightIdx);
+		? binarySearch(arr, element, leftIdx, midIdx - 1)
+		: binarySearch(arr, element, midIdx + 1, rightIdx);
 };
