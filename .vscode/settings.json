@@ -1,10 +1,16 @@
 {
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.bracketPairColorization.enabled": true,
 	"breadcrumbs.enabled": true,
 	"breadcrumbs.filePath": "on",
 	"diffEditor.ignoreTrimWhitespace": false,
-	"editor.defaultFormatter": "dbaeumer.vscode-eslint",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
+		"source.organizeImports": true
+	},
+	// "editor.defaultFormatter": "dbaeumer.vscode-eslint",
 	"editor.detectIndentation": false,
-	"editor.formatOnSave": true,
 	"editor.insertSpaces": false,
 	"editor.parameterHints.enabled": true,
 	"editor.quickSuggestions": {
@@ -13,40 +19,11 @@
 		"strings": true
 	},
 	"editor.renderWhitespace": "all",
-	"editor.rulers": [
-		120
-	],
+	"editor.rulers": [120],
 	"editor.tabSize": 2,
 	"eslint.alwaysShowStatus": true,
-	"eslint.autoFixOnSave": true,
 	"eslint.enable": true,
 	"eslint.lintTask.enable": true,
-	"eslint.validate": [
-		{
-			"autoFix": true,
-			"language": "javascript"
-		},
-		{
-			"autoFix": true,
-			"language": "vue"
-		},
-		{
-			"autoFix": true,
-			"language": "html"
-		},
-		{
-			"autoFix": true,
-			"language": "typescript"
-		},
-		{
-			"autoFix": true,
-			"language": "typescriptreact"
-		},
-		{
-			"autoFix": true,
-			"language": "json"
-		},
-	],
 	"files.autoSave": "afterDelay",
 	"files.exclude": {
 		"**/.DS_Store": true,
@@ -55,10 +32,10 @@
 		"**/.svn": true,
 		"**/CVS": true,
 		".npm-offline-cache": true,
-		"build": true,
+		"build": false,
 		"coverage": true,
-		"dist": true,
-		"lib": true,
+		"dist": false,
+		"lib": false,
 		"node_modules": false,
 		"npm": true
 	},
@@ -69,38 +46,14 @@
 		"**/node_modules/**": true,
 		"**/tmp/**": true
 	},
-	"html.suggest.html5": true,
-	"[javascript]": {
-		"editor.formatOnSave": true,
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"javascript.preferences.importModuleSpecifier": "auto",
-	"javascript.preferences.quoteStyle": "single",
-	"javascript.suggest.completeFunctionCalls": true,
-	"javascript.validate.enable": true,
-	  "[json]": {
-		"editor.formatOnSave": true,
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	  },
 	"outline.icons": true,
 	"outline.problems.badges": true,
 	"outline.problems.enabled": true,
-	"[typescript]": {
-		"editor.formatOnSave": true,
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[typescriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
-		"editor.formatOnSave": true
-	},
-	"typescript.preferences.importModuleSpecifier": "auto",
 	"typescript.preferences.quoteStyle": "single",
 	"typescript.tsdk": "node_modules/typescript/lib",
 	"typescript.validate.enable": true,
-	"vetur.validation.template": false,
 	"window.zoomLevel": 0,
 	"workbench.activityBar.visible": true,
-	"workbench.colorTheme": "One Dark+ (Sublime)",
+	"workbench.colorTheme": "Atom One Dark",
 	"workbench.editor.labelFormat": "short"
 }
-
