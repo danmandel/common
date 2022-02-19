@@ -1,6 +1,5 @@
 {
 	"recommendations": [
-		"eg2.tslint",
 		"stevencl.adddoccomments",
 		"usernamehw.errorlens",
 		"esbenp.prettier-vscode",
